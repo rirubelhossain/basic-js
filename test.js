@@ -67,3 +67,11 @@ while( i <= 100 ){
     ++i ;
 }
 console.log(sum);
+
+
+const books = ['book1', 'book2' , 'book3'];
+var len = books.length ;
+
+for(var j = 0 ; j < len ; j++){
+    console.log(books[j]);
+}
