@@ -57,21 +57,41 @@
 
 
  
-console.log(6 != 6)
+// console.log(6 != 6)
 
-var i = 1 ;
-var sum = 0 ;
-while( i <= 100 ){
-    sum += i ;
+// var i = 1 ;
+// var sum = 0 ;
+// while( i <= 100 ){
+//     sum += i ;
+//     console.log(i);
+//     ++i ;
+// }
+// console.log(sum);
+
+
+// const books = ['book1', 'book2' , 'book3'];
+// var len = books.length ;
+
+// for(var j = 0 ; j < len ; j++){
+//     console.log(books[j]);
+// }
+
+
+
+// var inp = prompt() ;
+// console.log(inp);
+
+// import { sum as _sum } from 'lodash';
+
+// const numbers = [1, 2, 3, 4, 5];
+// const sum = _sum(numbers);
+// console.log("Sum:", sum);
+
+
+
+for( var i = 0 ; i < 10 ; i++){
+    if( i > 5 ){
+        continue;
+    }
     console.log(i);
-    ++i ;
-}
-console.log(sum);
-
-
-const books = ['book1', 'book2' , 'book3'];
-var len = books.length ;
-
-for(var j = 0 ; j < len ; j++){
-    console.log(books[j]);
 }
