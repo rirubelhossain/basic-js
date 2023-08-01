@@ -46,3 +46,14 @@ switch(color){
     default :
         console.log("You entered wrong color");
 }
+
+var movie = { name : "heloo wo"}
+
+console.log(movie.name)
+
+function add(){
+    return "nooooooooo"
+    return "yeeeeeees" ;
+    return "bhaire"
+}
+console.log(add())
