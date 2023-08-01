@@ -34,6 +34,6 @@ var nm = "false";
 console.log(typeof nm)
 
 var k = 5 ;
-for(  k < 50 ; ++k ){
+for(  ;k < 50 ; ++k ){
     console.log(k);
 }
