@@ -29,3 +29,20 @@ function make_avg_ar(number1, size){
 }
 var arr = [1,2,3,4,5];
 console.log("The average of the array is = " + make_avg_ar(arr, 5));
+
+// practice task 5
+
+var color = 'blue';
+switch(color){
+    case 'red' :
+        console.log("It's a red color");
+        break ;
+    case 'yellow' :
+        console.log("It's Yellow color");
+        break ;
+    case 'green' :
+        console.log("It's green color");
+        break;
+    default :
+        console.log("You entered wrong color");
+}
