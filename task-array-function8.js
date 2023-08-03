@@ -25,14 +25,14 @@ console.log(result);
 
 
 function GetHightestScore(towAr){
-    var tt = towAr[0][1] ;
+    var tt = towAr[0][0] ;
     var name1 ;
     console.log(tt)
     for(var k = 0 ; k < towAr.length ; ++k){
         for(var j = 0 ; j < towAr.length ; ++j ){
-            if( towAr[k][j] > tt ){
-                tt = towAr[k][j];
-                name1 = towAr[k][0] 
+            if( towAr[k][1] > tt ){
+                tt = towAr[k][1];
+                name1 = towAr[k][1] 
             }
         }
         // console.log("The max number is = ", tt, " " , name1);
@@ -40,8 +40,8 @@ function GetHightestScore(towAr){
     return name1 ;
 }
 var towAr = [
-    ["rubel",20],
-    ["Ash",30],
+    ["rubel",2000],
+    ["Ash",3000],
     ["Sab",400],
     ["Mushi", 50],
     ["Sakib", 500]
