@@ -29,3 +29,10 @@ switch(test){
     default:
     console.log("No matches")
 }
+
+
+var numberTest = prompt("Enter a number");
+
+if( numberTest == 5){
+    console.log("You entered ", numberTest );
+}
