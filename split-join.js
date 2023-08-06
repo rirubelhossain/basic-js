@@ -6,3 +6,10 @@ console.log(parts)
 
 const sentences  = lyrics.split('.')
 console.log(sentences)
+
+
+const character = lyrics.split("");
+console.log(character)
+
+// at() trim() concat()
+
