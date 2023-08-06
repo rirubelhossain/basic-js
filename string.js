@@ -11,3 +11,10 @@ const test1 = "Hello man how are you? yesterday you did not take my phone call, 
 const jam = test1.toUpperCase();
 
 console.log(jam)
+
+
+// how to use endWith() and startWith() function in string
+
+
+console.log(test1.startsWith("man"));
+console.log(test1.endsWith("have"))
