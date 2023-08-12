@@ -45,3 +45,22 @@ function matchProducts(products , search){
 
 const result = matchProducts(products, 'Phone')
 console.log(result);
+
+
+console.log(23/0)
+
+console.log("Hi")
+ 
+
+if( 15 == "15"){
+    console.log("true")
+}else{
+    console.log("false")
+}
+
+console.log("123" + 123 )
+
+let a = "hi"
+let b = "there"
+
+console.log(a + b )
