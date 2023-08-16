@@ -11,15 +11,30 @@
 <p id = "pera">I am paragraph</p> -->
 
 <h1 >This is tag 1</h1>
-<h1>This is tag 2</h1>
+<h1 id="h11">This is tag 2</h1>
 
 <!-- Now i am going to show how to use select query -->
 
 <p  class="para">This just a paragraph nothing else</p>
 
-
-
-
+<button onclick="fun_red()">click here for red</button>
+<button onclick="fun_yellow()">click here for blue</button>
+<button id="make-purple">click here to purple</button>
 <script src="./index.js"></script>
+<script>
+
+const purple = document.getElementById("make-purple") ;
+
+
+purple.onclick =  fun_purple 
+
+function fun_purple(){
+    document.body.style.backgroundColor ="purple"
+}
+
+</script>
+
+
+
 </body>
 </html>
