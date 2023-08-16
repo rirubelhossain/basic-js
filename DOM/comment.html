@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Please add a comment</h1>
+    <div id = "post_out">
+        <P>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dolor officiis cupiditate, exercitationem unde accusamus repellendus in eligendi praesentium voluptate! Cupiditate officia quis sint saepe at tenetur quaerat dignissimos quo.
+        </P>
+    </div>
+    
+    <div>
+        <textarea name="" id="input_take" cols="50" rows="7"></textarea>
+        <br>
+        <button onclick="post_button()">Post</button>
+    </div>
+
+    <script>
+        function post_button()
+        {
+            const catch_input = document.getElementById("input_take") ;
+            const receive = catch_input.value ;
+
+            const comment_container = document.getElementById("post_out") ;
+            const p = document.createElement("p");
+            p.innerText = receive ;
+            comment_container.appendChild(p);
+            // document.getElementById("post_out").innerText = receive ;
+            catch_input.value = "";
+
+        }
+    </script>
+
+</body>
+</html>
