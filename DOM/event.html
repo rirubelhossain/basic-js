@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+
+    
+
+    <h1>Event handler</h1>
+
+    <button onclick="event_handler()">Event Handler</button>
+
+    <br>
+    <br>
+    <input id="catch" type="text">
+    <button onclick="get_fun()">update</button>
+    <p id="output"></p>
+    <script>
+        
+        function get_fun()
+        {
+            const cat = document.getElementById("catch") ;
+            //  document.getElementById("output").inputMode = cat;  
+            // console.log(cat.value)  
+            const rec = cat.value ;
+            document.getElementById("output").innerHTML = rec ;
+        }
+
+        function event_handler(){
+            console.log("just test for handler");
+        }
+    </script>
+</body>
+</html>
