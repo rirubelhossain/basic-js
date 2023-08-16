@@ -20,6 +20,11 @@
 <button onclick="fun_red()">click here for red</button>
 <button onclick="fun_yellow()">click here for blue</button>
 <button id="make-purple">click here to purple</button>
+
+<button onclick="console.log('hello console')">check log</button>
+
+<button id = "make-pink">make-pink</button>
+
 <script src="./index.js"></script>
 <script>
 
@@ -31,6 +36,14 @@ purple.onclick =  fun_purple
 function fun_purple(){
     document.body.style.backgroundColor ="purple"
 }
+// make-pink
+const make_pink = document.getElementById("make-pink") ;
+make_pink.addEventListener("click", makePink );
+function makePink()
+{
+    document.body.style.backgroundColor = "pink";
+}
+
 
 </script>
 
