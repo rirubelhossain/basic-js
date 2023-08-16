@@ -24,6 +24,7 @@
 <button onclick="console.log('hello console')">check log</button>
 
 <button id = "make-pink">make-pink</button>
+<button id = "make-green">make-green</button>
 
 <script src="./index.js"></script>
 <script>
@@ -43,6 +44,10 @@ function makePink()
 {
     document.body.style.backgroundColor = "pink";
 }
+const make_green = document.getElementById("make-green") ;
+make_green.addEventListener("click", function makeGreen(){
+    document.body.style.backgroundColor= "green" ;
+})
 
 
 </script>
