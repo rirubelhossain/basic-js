@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     
@@ -14,6 +16,36 @@
     <h3>cupon apply</h3>
     <input type="text" id="copun_id">
     <button id="btn-apply">Apply</button>
+
+    <section>
+        <div class="w-9/12 mx-auto">
+            <h4 class="bg-orange-600 p-2">Please click to purchass</h4>
+            <button class="px-7 bg-green-500 py-4 mt-4 rounded-lg text-white font-semibold" id="p_1">Package1</button>
+            <button class="px-7 bg-green-500 py-4 mt-4 rounded-lg text-white font-semibold" id="p_2">Package2</button>
+            <button class="px-7 bg-green-500 py-4 mt-4 rounded-lg text-white font-semibold" id="p_3">Package3</button>
+            <button class="px-7 bg-green-500 py-4 mt-4 rounded-lg text-white font-semibold" id="p_4">Package4</button>
+        </div>
+    </section>
+
+    <section class="w-9/12 mx-auto mt-6">
+        <h4 class="bg-orange-600 p-2">Output Section</h4>
+        <p id="Package1_out"></p>
+    </section>
+
+    <div class="card w-96 bg-base-100 shadow-xl">
+        <figure class="px-10 pt-10">
+          <img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Shoes!</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions">
+            <button class="btn btn-primary">Buy Now</button>
+            price : 12$
+          </div>
+        </div>
+      </div>
+
 
     <script src="./button.js"></script>
 </body>

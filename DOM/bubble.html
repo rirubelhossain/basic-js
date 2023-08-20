@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bubble handling</title>
+    <style>
+        .box{
+            border: 2px solid tomato;
+            width: 300px;
+            text-align: center;
+            padding: 100px;
+        }
+    </style>
 </head>
 <body id="body">
     <h1>Exploring event bubble</h1>
@@ -18,20 +26,73 @@
             <li id="item-6"> item six</li>
         </ul>
     </section>
+
+    <section>
+
+        <h4>Take a input</h4>
+        <input id="input1" type="text">
+        <button id="btn_get">Get</button>
+
+    </section>
+
+
+    <section>
+        <div class="box">
+            <h2>Box</h2>
+            <h3 id="box_1">Box1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, sunt.</p>
+            <button style="background-color: brown; padding: 20px; border-radius: 20px;" onclick="function_target(this)">Click</button>
+        </div>
+    </section>
+
+
     <script>
-        document.getElementById("item-2").addEventListener("click", function(event){
-            console.log("item-click")
-            event.stopPropagation();
-        })
-        document.getElementById("list-ul").addEventListener("click", function(){
-            console.log("Ul click")
-        })
-        document.getElementById("list-container").addEventListener("click", function(){
-            console.log("section container clicked")
-        })
-        document.getElementById("body").addEventListener("click", function(){
-            console.log("body")
-        })
+
+        function function_target(event){
+            const first_1 =event.parentNode.childNodes[1].innerText; 
+            const first_2 = event.parentNode.childNodes[2].innerText ;
+            
+            const box_1 = document.getElementById("box_1") ;
+            const li = document.createElement("li");
+            li.innerText = first_1 ;
+            box_1.appendChild(li)
+        }
+
+
+
+
+        // document.getElementById("btn_get").addEventListener("click", function(){
+
+        //     const gt = convertToIN("input1");
+        //     console.log(gt)
+
+
+        // })
+        // function convertToIN(id){
+        //     const con = document.getElementById(id).value ;
+        //     if(isNaN(con)){
+        //         console.log("this is empty")
+        //         return ;
+        //     }
+        //     return parseInt(con);
+        // }
+
+
+
+
+        // document.getElementById("item-2").addEventListener("click", function(event){
+        //     console.log("item-click")
+        //     event.stopPropagation();
+        // })
+        // document.getElementById("list-ul").addEventListener("click", function(){
+        //     console.log("Ul click")
+        // })
+        // document.getElementById("list-container").addEventListener("click", function(){
+        //     console.log("section container clicked")
+        // })
+        // document.getElementById("body").addEventListener("click", function(){
+        //     console.log("body")
+        // })
     </script>
 </body>
 </html>

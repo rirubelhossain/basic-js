@@ -39,3 +39,25 @@ document.getElementById("btn-apply").addEventListener("click", function(){
     }
     
 })
+
+
+document.getElementById("p_1").addEventListener("click", function(){
+    const var1 = 12 ;
+    const var2 = "package1"
+    document.getElementById("Package1_out").innerText = var1 +" " + var2 ;
+})
+document.getElementById("p_2").addEventListener("click", function(){
+    const var1 = 12 ;
+    const var2 = "package2"
+    document.getElementById("Package1_out").innerText = var1 +" " + var2 ;
+})
+document.getElementById("p_3").addEventListener("click", function(){
+    const var1 = 12 ;
+    const var2 = "package3"
+    document.getElementById("Package1_out").innerText = var1 +" " + var2 ;
+})
+document.getElementById("p_4").addEventListener("click", function(){
+    const var1 = 12 ;
+    const var2 = "package4"
+    document.getElementById("Package1_out").innerText = var1 +" " + var2 ;
+})
